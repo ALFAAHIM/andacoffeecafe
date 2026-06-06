@@ -44,7 +44,19 @@ navLinks.querySelectorAll('.nav-link').forEach(link => {
 const handleScroll = () => {
   navbar.classList.toggle('scrolled', window.scrollY > 60);
   highlightActiveLink();
+  heroScrollZoom();
 };
+
+const heroBg = document.querySelector('.hero-bg');
+const heroScrollZoom = () => {
+  if (!heroBg) return;
+  // Zoom in slightly as the user scrolls down, stop processing once past the hero section
+  if (window.scrollY < window.innerHeight) {
+    const scale = 1 + (window.scrollY * 0.0004);
+    heroBg.style.transform = `scale(${scale})`;
+  }
+};
+
 window.addEventListener('scroll', handleScroll, { passive: true });
 
 // Active link highlighting

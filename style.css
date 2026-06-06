@@ -312,12 +312,7 @@ address { font-style: normal; }
   background-position: center 35%;
   background-repeat: no-repeat;
   background-image: url('images/exterior.jpg');
-  animation: heroZoom 9s var(--ease-out) forwards;
   will-change: transform;
-}
-@keyframes heroZoom {
-  from { transform: scale(1.07); }
-  to   { transform: scale(1); }
 }
 
 .hero-vignette {
