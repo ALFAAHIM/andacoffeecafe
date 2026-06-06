@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="...and a Coffee Resto Café – A cozy modern resto café in Kerala. Good Vibes, Great Bites and a Coffee. Fresh food, specialty coffee, desserts, and a relaxed café atmosphere." />
+  <meta name="theme-color" content="#111111" />
+  <title>...and a Coffee – Resto Café | Good Vibes, Great Bites</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&family=Dancing+Script:wght@500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ================================================
+       STICKY NAVBAR
+  ================================================ -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="#home" class="nav-brand" aria-label="and a Coffee Resto Café – Home">
+        <span class="brand-ellipsis">...</span>and a <em>Coffee</em>
+        <span class="brand-sub">RESTO CAFÉ</span>
+      </a>
+      <button class="nav-burger" id="navBurger" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks" role="list">
+        <li><a href="#home"      class="nav-link" id="nl-home">Home</a></li>
+        <li><a href="#about"     class="nav-link" id="nl-about">About</a></li>
+        <li><a href="#menu"      class="nav-link" id="nl-menu">Menu</a></li>
+        <li><a href="#gallery"   class="nav-link" id="nl-gallery">Gallery</a></li>
+        <li><a href="#contact"   class="nav-link contact-cta" id="nl-contact">Find Us</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="nav-overlay" id="navOverlay" aria-hidden="true"></div>
+
+  <!-- ================================================
+       HERO SECTION
+  ================================================ -->
+  <section id="home" class="hero" aria-label="Hero – and a Coffee Resto Café">
+    <div class="hero-bg" id="heroBg"></div>
+    <div class="hero-vignette"></div>
+    <div class="hero-content">
+      <div class="hero-pill" aria-label="Tagline">
+        <i class="fa-solid fa-mug-hot"></i>
+        <span>Good Vibes · Great Bites · and a Coffee</span>
+      </div>
+      <h1 class="hero-name">
+        <span class="h-ellipsis">...</span>and a<br /><em>Coffee</em>
+      </h1>
+      <p class="hero-resto">RESTO CAFÉ</p>
+      <h2 class="hero-headline">Coffee, Food &amp; Conversations</h2>
+      <p class="hero-tagline">A cozy resto café for warm coffee, fresh food, and relaxed moments.</p>
+    </div>
+    <div class="hero-scroll-hint" aria-hidden="true">
+      <div class="scroll-mouse"><span></span></div>
+    </div>
+  </section>
+
+  <!-- ================================================
+       ABOUT SECTION
+  ================================================ -->
+  <section id="about" class="about section-space" aria-label="About and a Coffee">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-visual">
+          <div class="about-img-frame">
+            <img
+              src="images/interior.jpg"
+              alt="Inside and a Coffee – Globe pendant lights over marble tables with lush green plant wall"
+              loading="lazy"
+              class="about-img"
+              id="about-img"
+            />
+          </div>
+          <div class="about-quote-tag">
+            <span class="script-text">"Good Vibes, Great Bites"</span>
+          </div>
+        </div>
+        <div class="about-text">
+          <span class="eyebrow">Our Story</span>
+          <h2 class="section-heading">More Than Just a Coffee</h2>
+          <p class="about-lead">
+            Nestled under warm globe lights with a wall of lush greens beside you, 
+            <strong>...and a Coffee</strong> is a different kind of café. Born from a love 
+            for honest food, real coffee, and unhurried conversations.
+          </p>
+          <p class="about-body">
+            We set up our home inside a repurposed container space — clean, minimal, and 
+            surrounded by nature. Whether you come for your afternoon coffee, a loaded burger, 
+            or simply a place to sit and breathe, this is where you belong. Open every day 
+            from 1 PM — when you're ready for a break, we're already waiting.
+          </p>
+          <div class="about-pillars">
+            <div class="pillar">
+              <strong>50+</strong>
+              <span>Menu Items</span>
+            </div>
+            <div class="pillar-divider"></div>
+            <div class="pillar">
+              <strong>Daily</strong>
+              <span>1 PM – 11 PM</span>
+            </div>
+            <div class="pillar-divider"></div>
+            <div class="pillar">
+              <strong>∞</strong>
+              <span>Good Vibes</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================
+       SIGNATURE HIGHLIGHTS
+  ================================================ -->
+  <section id="highlights" class="highlights section-space" aria-label="Signature highlights">
+    <div class="container">
+      <div class="section-header centered dark-header">
+        <span class="eyebrow">Signature</span>
+        <h2 class="section-heading light">What We Do Best</h2>
+        <p class="section-sub light">Every item crafted with care — from the first sip to the last bite.</p>
+      </div>
+      <div class="hl-grid">
+
+        <!-- Fresh Coffee -->
+        <article class="hl-card reveal" id="hl-coffee">
+          <div class="hl-visual coffee-grad">
+            <div class="hl-icon-wrap">
+              <i class="fa-solid fa-mug-hot" aria-hidden="true"></i>
+            </div>
+          </div>
+          <div class="hl-body">
+            <h3>Fresh Coffee</h3>
+            <p>Rich espressos, creamy lattes, cold brews, and our favourite filter — brewed right for every mood.</p>
+          </div>
+        </article>
+
+        <!-- Burgers & Quick Bites -->
+        <article class="hl-card reveal" id="hl-burger">
+          <div class="hl-visual img-visual">
+            <img src="images/burger.jpg" alt="Signature BBQ burger with golden fries at and a Coffee" loading="lazy" />
+          </div>
+          <div class="hl-body">
+            <h3>Burgers &amp; Quick Bites</h3>
+            <p>Loaded burgers dripping in sauce, crispy fries, and bites that actually satisfy. Made fresh, every order.</p>
+          </div>
+        </article>
+
+        <!-- Desserts & Shakes -->
+        <article class="hl-card reveal" id="hl-dessert">
+          <div class="hl-visual dessert-grad">
+            <div class="hl-icon-wrap">
+              <i class="fa-solid fa-ice-cream" aria-hidden="true"></i>
+            </div>
+          </div>
+          <div class="hl-body">
+            <h3>Desserts &amp; Shakes</h3>
+            <p>Thick shakes, sweet endings, and creamy treats to make every visit worth it. Your sweet tooth will thank you.</p>
+          </div>
+        </article>
+
+        <!-- Café Specials -->
+        <article class="hl-card reveal" id="hl-special">
+          <div class="hl-visual img-visual">
+            <img src="images/sizzler.jpg" alt="Beef sizzler café special on cast iron plate at and a Coffee" loading="lazy" />
+          </div>
+          <div class="hl-body">
+            <h3>Café Specials</h3>
+            <p>Sizzlers, platters, and chef creations that keep regulars coming back. This is why people drive here.</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================
+       MENU PREVIEW
+  ================================================ -->
+  <section id="menu" class="menu-section section-space" aria-label="Menu preview">
+    <div class="container">
+      <div class="section-header centered">
+        <span class="eyebrow">Menu Preview</span>
+        <h2 class="section-heading">A Taste of What's Inside</h2>
+        <p class="section-sub">A glimpse of our menu — come in for the full experience.</p>
+      </div>
+
+      <div class="menu-wrapper">
+        <!-- Tab Buttons -->
+        <div class="menu-tabs" role="tablist" aria-label="Menu categories">
+          <button class="tab-btn active" role="tab" aria-selected="true"  data-tab="coffee"   id="tab-coffee-btn"   aria-controls="tab-coffee">Coffee</button>
+          <button class="tab-btn"        role="tab" aria-selected="false" data-tab="tea"      id="tab-tea-btn"      aria-controls="tab-tea">Tea &amp; Beverages</button>
+          <button class="tab-btn"        role="tab" aria-selected="false" data-tab="snacks"   id="tab-snacks-btn"   aria-controls="tab-snacks">Snacks</button>
+          <button class="tab-btn"        role="tab" aria-selected="false" data-tab="burgers"  id="tab-burgers-btn"  aria-controls="tab-burgers">Burgers</button>
+          <button class="tab-btn"        role="tab" aria-selected="false" data-tab="desserts" id="tab-desserts-btn" aria-controls="tab-desserts">Desserts</button>
+          <button class="tab-btn"        role="tab" aria-selected="false" data-tab="specials" id="tab-specials-btn" aria-controls="tab-specials">Specials</button>
+        </div>
+
+        <!-- Coffee -->
+        <div class="tab-panel active" id="tab-coffee" role="tabpanel" aria-labelledby="tab-coffee-btn">
+          <ul class="menu-list">
+            <li class="menu-row"><span class="m-name">Espresso</span><span class="m-price">₹80</span></li>
+            <li class="menu-row"><span class="m-name">Cappuccino</span><span class="m-price">₹120</span></li>
+            <li class="menu-row"><span class="m-name">Café Latte</span><span class="m-price">₹130</span></li>
+            <li class="menu-row"><span class="m-name">Cold Brew</span><span class="m-price">₹150</span></li>
+            <li class="menu-row"><span class="m-name">Filter Coffee</span><span class="m-price">₹70</span></li>
+            <li class="menu-row"><span class="m-name">Iced Americano</span><span class="m-price">₹140</span></li>
+          </ul>
+        </div>
+
+        <!-- Tea & Beverages -->
+        <div class="tab-panel" id="tab-tea" role="tabpanel" aria-labelledby="tab-tea-btn">
+          <ul class="menu-list">
+            <li class="menu-row"><span class="m-name">Masala Chai</span><span class="m-price">₹60</span></li>
+            <li class="menu-row"><span class="m-name">Green Tea</span><span class="m-price">₹80</span></li>
+            <li class="menu-row"><span class="m-name">Lemon Soda</span><span class="m-price">₹70</span></li>
+            <li class="menu-row"><span class="m-name">Fresh Lime Juice</span><span class="m-price">₹80</span></li>
+            <li class="menu-row"><span class="m-name">Iced Tea</span><span class="m-price">₹90</span></li>
+            <li class="menu-row"><span class="m-name">Herbal Infusion</span><span class="m-price">₹85</span></li>
+          </ul>
+        </div>
+
+        <!-- Snacks -->
+        <div class="tab-panel" id="tab-snacks" role="tabpanel" aria-labelledby="tab-snacks-btn">
+          <ul class="menu-list">
+            <li class="menu-row"><span class="m-name">French Fries</span><span class="m-price">₹120</span></li>
+            <li class="menu-row"><span class="m-name">Garlic Bread</span><span class="m-price">₹100</span></li>
+            <li class="menu-row"><span class="m-name">Chicken Wings</span><span class="m-price">₹220</span></li>
+            <li class="menu-row"><span class="m-name">Spring Rolls</span><span class="m-price">₹140</span></li>
+            <li class="menu-row"><span class="m-name">Loaded Nachos</span><span class="m-price">₹160</span></li>
+            <li class="menu-row"><span class="m-name">Onion Rings</span><span class="m-price">₹130</span></li>
+          </ul>
+        </div>
+
+        <!-- Burgers -->
+        <div class="tab-panel" id="tab-burgers" role="tabpanel" aria-labelledby="tab-burgers-btn">
+          <ul class="menu-list">
+            <li class="menu-row"><span class="m-name">Classic Beef Burger</span><span class="m-price">₹250</span></li>
+            <li class="menu-row"><span class="m-name">BBQ Chicken Burger</span><span class="m-price">₹230</span></li>
+            <li class="menu-row"><span class="m-name">Mushroom Swiss Burger</span><span class="m-price">₹240</span></li>
+            <li class="menu-row"><span class="m-name">Club Sandwich</span><span class="m-price">₹200</span></li>
+            <li class="menu-row"><span class="m-name">Grilled Chicken Sub</span><span class="m-price">₹210</span></li>
+            <li class="menu-row"><span class="m-name">Veg Burger</span><span class="m-price">₹190</span></li>
+          </ul>
+        </div>
+
+        <!-- Desserts -->
+        <div class="tab-panel" id="tab-desserts" role="tabpanel" aria-labelledby="tab-desserts-btn">
+          <ul class="menu-list">
+            <li class="menu-row"><span class="m-name">Chocolate Milkshake</span><span class="m-price">₹160</span></li>
+            <li class="menu-row"><span class="m-name">Oreo Shake</span><span class="m-price">₹170</span></li>
+            <li class="menu-row"><span class="m-name">Brownie + Ice Cream</span><span class="m-price">₹180</span></li>
+            <li class="menu-row"><span class="m-name">Waffles</span><span class="m-price">₹200</span></li>
+            <li class="menu-row"><span class="m-name">Caramel Pudding</span><span class="m-price">₹120</span></li>
+            <li class="menu-row"><span class="m-name">Cheesecake Slice</span><span class="m-price">₹150</span></li>
+          </ul>
+        </div>
+
+        <!-- Specials -->
+        <div class="tab-panel" id="tab-specials" role="tabpanel" aria-labelledby="tab-specials-btn">
+          <ul class="menu-list">
+            <li class="menu-row"><span class="m-name">Beef Sizzler</span><span class="m-price">₹380</span></li>
+            <li class="menu-row"><span class="m-name">Chicken Sizzler</span><span class="m-price">₹340</span></li>
+            <li class="menu-row"><span class="m-name">Pasta Platter</span><span class="m-price">₹260</span></li>
+            <li class="menu-row"><span class="m-name">Chef's Special Bowl</span><span class="m-price">₹290</span></li>
+            <li class="menu-row"><span class="m-name">Mixed Grill Plate</span><span class="m-price">₹350</span></li>
+            <li class="menu-row"><span class="m-name">Loaded Nachos Platter</span><span class="m-price">₹240</span></li>
+          </ul>
+        </div>
+      </div><!-- /.menu-wrapper -->
+
+      <p class="menu-note">* Prices are approximate. Visit us or call for our full updated menu and daily specials.</p>
+    </div>
+  </section>
+
+  <!-- ================================================
+       GALLERY
+  ================================================ -->
+  <section id="gallery" class="gallery-section section-space" aria-label="Photo gallery">
+    <div class="container">
+      <div class="section-header centered dark-header">
+        <span class="eyebrow">Gallery</span>
+        <h2 class="section-heading light">A Peek Inside</h2>
+        <p class="section-sub light">Real moments, real food, real vibes.</p>
+      </div>
+      <div class="gallery-grid" id="galleryGrid">
+        <figure class="g-item g-tall reveal" id="g1">
+          <img src="images/interior.jpg" alt="Interior of and a Coffee – globe pendant lights and tropical green plant wall" loading="lazy" />
+          <figcaption class="g-caption">Interior Vibes</figcaption>
+        </figure>
+        <figure class="g-item reveal" id="g2">
+          <img src="images/burger.jpg" alt="Signature BBQ burger with golden fries" loading="lazy" />
+          <figcaption class="g-caption">Burgers</figcaption>
+        </figure>
+        <figure class="g-item reveal" id="g3">
+          <img src="images/outdoor-terrace.jpg" alt="Outdoor terrace at night with string fairy lights and marble tables" loading="lazy" />
+          <figcaption class="g-caption">Outdoor Terrace</figcaption>
+        </figure>
+        <figure class="g-item g-tall reveal" id="g4">
+          <img src="images/signboard.jpg" alt="and a Coffee Resto Café illuminated signboard at night" loading="lazy" />
+          <figcaption class="g-caption">The Sign</figcaption>
+        </figure>
+        <figure class="g-item reveal" id="g5">
+          <img src="images/sizzler.jpg" alt="Café special – sizzler dish on cast iron plate with garlic bread" loading="lazy" />
+          <figcaption class="g-caption">Café Specials</figcaption>
+        </figure>
+        <figure class="g-item reveal" id="g6">
+          <img src="images/exterior.jpg" alt="and a Coffee – exterior view at night with string lights" loading="lazy" />
+          <figcaption class="g-caption">Our Spot</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Lightbox -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+    <div class="lb-backdrop" id="lbBackdrop"></div>
+    <button class="lb-close" id="lbClose" aria-label="Close image viewer">✕</button>
+    <button class="lb-prev" id="lbPrev" aria-label="Previous image">&#8249;</button>
+    <button class="lb-next" id="lbNext" aria-label="Next image">&#8250;</button>
+    <div class="lb-img-wrap">
+      <img src="" alt="" class="lb-img" id="lbImg" />
+    </div>
+  </div>
+
+  <!-- ================================================
+       WHY VISIT
+  ================================================ -->
+  <section class="why-section section-space" aria-label="Why visit and a Coffee">
+    <div class="container">
+      <div class="section-header centered">
+        <span class="eyebrow">Why Us</span>
+        <h2 class="section-heading">Why You'll Love It Here</h2>
+      </div>
+      <div class="why-grid">
+        <article class="why-card reveal" id="why-1">
+          <div class="why-icon-box" aria-hidden="true">
+            <i class="fa-solid fa-leaf"></i>
+          </div>
+          <h3>Cozy Ambience</h3>
+          <p>Globe lights, a wall of green, marble tables, and a breeze that makes you want to stay just a little longer.</p>
+        </article>
+        <article class="why-card reveal" id="why-2">
+          <div class="why-icon-box" aria-hidden="true">
+            <i class="fa-solid fa-utensils"></i>
+          </div>
+          <h3>Fresh Food &amp; Drinks</h3>
+          <p>Every order made fresh — your coffee brewed, your burger assembled, nothing pre-packaged or rushed.</p>
+        </article>
+        <article class="why-card reveal" id="why-3">
+          <div class="why-icon-box" aria-hidden="true">
+            <i class="fa-solid fa-users"></i>
+          </div>
+          <h3>Perfect Hangout Spot</h3>
+          <p>Friends, family, a solo afternoon, or a casual date — our space is built for slow, easy, good times.</p>
+        </article>
+        <article class="why-card reveal" id="why-4">
+          <div class="why-icon-box" aria-hidden="true">
+            <i class="fa-solid fa-location-dot"></i>
+          </div>
+          <h3>Easy to Reach</h3>
+          <p>Conveniently located near the airport road. Easy to find, easy to park — just look for our sign.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================
+       REVIEWS
+  ================================================ -->
+  <section id="reviews" class="reviews-section section-space" aria-label="Customer reviews">
+    <div class="container">
+      <div class="section-header centered dark-header">
+        <span class="eyebrow">Reviews</span>
+        <h2 class="section-heading light">What Our Guests Say</h2>
+      </div>
+      <div class="reviews-grid">
+
+        <article class="review-card reveal" id="rv-1">
+          <div class="rv-stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <blockquote class="rv-text">
+            "One of the best café spots I've visited in Kerala. The burger was absolutely loaded 
+            and the coffee was perfect. The ambience with those globe lights is just beautiful — 
+            very instagrammable but genuinely cozy too."
+          </blockquote>
+          <div class="rv-author">
+            <div class="rv-avatar" aria-hidden="true">A</div>
+            <div>
+              <strong>Arjun Menon</strong>
+              <span>Google Review</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="review-card reveal" id="rv-2">
+          <div class="rv-stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <blockquote class="rv-text">
+            "Visited with friends on a weekend evening. The outdoor terrace with string lights 
+            is so peaceful. Tried the sizzler — absolutely worth it. The staff are friendly and 
+            the portions are generous. Will definitely come back!"
+          </blockquote>
+          <div class="rv-author">
+            <div class="rv-avatar" aria-hidden="true">P</div>
+            <div>
+              <strong>Priya Krishnan</strong>
+              <span>Google Review</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="review-card reveal" id="rv-3">
+          <div class="rv-stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <blockquote class="rv-text">
+            "Stumbled upon this place and honestly it's become my regular now. Very clean, 
+            very modern but still feels like a proper Kerala spot — not trying too hard to 
+            be fancy. The plant wall inside is gorgeous. Highly recommend the cold brew."
+          </blockquote>
+          <div class="rv-author">
+            <div class="rv-avatar" aria-hidden="true">R</div>
+            <div>
+              <strong>Rahul Thomas</strong>
+              <span>Google Review</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="review-card reveal" id="rv-4">
+          <div class="rv-stars" aria-label="4 out of 5 stars">★★★★☆</div>
+          <blockquote class="rv-text">
+            "Great place to sit and chill. Loved the green plant wall inside and the marble 
+            tables. Cold brew was really good. Parking is decent and it's easy to find near 
+            the airport road. Good vibes all the way — will bring more friends next time."
+          </blockquote>
+          <div class="rv-author">
+            <div class="rv-avatar" aria-hidden="true">S</div>
+            <div>
+              <strong>Sneha Raj</strong>
+              <span>Google Review</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================
+       LOCATION & CONTACT
+  ================================================ -->
+  <section id="contact" class="contact-section section-space" aria-label="Location and contact">
+    <div class="container">
+      <div class="section-header centered">
+        <span class="eyebrow">Find Us</span>
+        <h2 class="section-heading">Location &amp; Contact</h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-details">
+
+          <div class="contact-row">
+            <div class="contact-icon" aria-hidden="true"><i class="fa-solid fa-location-dot"></i></div>
+            <div class="contact-text">
+              <strong>Address</strong>
+              <p>...and a Coffee Resto Café<br />Near Airport Road, Nedumbassery<br />Ernakulam, Kerala – 683572</p>
+            </div>
+          </div>
+
+          <div class="contact-row">
+            <div class="contact-icon" aria-hidden="true"><i class="fa-regular fa-clock"></i></div>
+            <div class="contact-text">
+              <strong>Opening Hours</strong>
+              <p>Every Day: 1:00 PM – 11:00 PM<br /><em>Open daily including weekends &amp; holidays</em></p>
+            </div>
+          </div>
+
+          <div class="contact-row">
+            <div class="contact-icon" aria-hidden="true"><i class="fa-solid fa-phone"></i></div>
+            <div class="contact-text">
+              <strong>Phone</strong>
+              <p>+91 98765 43210</p>
+            </div>
+          </div>
+
+          <div class="contact-actions">
+            <a href="https://maps.google.com/?q=and+a+Coffee+Resto+Café+Nedumbassery+Kerala"
+               target="_blank" rel="noopener noreferrer"
+               class="btn btn-primary" id="btn-directions">
+              <i class="fa-solid fa-map-location-dot" aria-hidden="true"></i> Get Directions
+            </a>
+            <a href="https://wa.me/919876543210?text=Hi!%20I%20saw%20your%20website%20and%20wanted%20to%20know%20more."
+               target="_blank" rel="noopener noreferrer"
+               class="btn btn-whatsapp" id="btn-whatsapp">
+              <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> WhatsApp
+            </a>
+            <a href="tel:+919876543210" class="btn btn-call" id="btn-call">
+              <i class="fa-solid fa-phone" aria-hidden="true"></i> Call Now
+            </a>
+          </div>
+        </div><!-- /.contact-details -->
+
+        <div class="map-visual">
+          <div class="map-card">
+            <div class="map-photo">
+              <img src="images/outdoor-terrace.jpg" alt="and a Coffee outdoor seating at night" loading="lazy" />
+              <div class="map-pin-overlay">
+                <i class="fa-solid fa-map-pin" aria-hidden="true"></i>
+                <span>...and a Coffee<br />Resto Café</span>
+                <a href="https://maps.google.com/?q=and+a+Coffee+Resto+Café+Nedumbassery+Kerala"
+                   target="_blank" rel="noopener noreferrer"
+                   class="open-maps-link" id="open-maps-btn">
+                  Open in Google Maps →
+                </a>
+              </div>
+            </div>
+          </div>
+        </div><!-- /.map-visual -->
+      </div><!-- /.contact-grid -->
+    </div>
+  </section>
+
+  <!-- ================================================
+       FINAL CTA SECTION
+  ================================================ -->
+  <section class="cta-section" aria-label="Call to action">
+    <div class="cta-bg-wrap">
+      <img src="images/exterior.jpg" alt="and a Coffee exterior at night" class="cta-bg-img" loading="lazy" />
+    </div>
+    <div class="cta-overlay" aria-hidden="true"></div>
+    <div class="container">
+      <div class="cta-content">
+        <span class="cta-eyebrow">Come Visit Us</span>
+        <h2 class="cta-heading">Planning a Coffee Break?</h2>
+        <p class="cta-sub">Drop in for good food, warm coffee, and a relaxed café experience.</p>
+        <div class="cta-btns">
+          <a href="tel:+919876543210" class="btn btn-gold" id="cta-call">
+            <i class="fa-solid fa-phone" aria-hidden="true"></i> Call Now
+          </a>
+          <a href="https://maps.google.com/?q=and+a+Coffee+Resto+Café+Nedumbassery+Kerala"
+             target="_blank" rel="noopener noreferrer"
+             class="btn btn-glass" id="cta-directions">
+            <i class="fa-solid fa-map-location-dot" aria-hidden="true"></i> Get Directions
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================
+       FOOTER
+  ================================================ -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#home" class="footer-logo" aria-label="and a Coffee – back to top">
+            <span class="brand-ellipsis">...</span>and a <em>Coffee</em>
+            <span class="brand-sub">RESTO CAFÉ</span>
+          </a>
+          <p class="footer-tagline">Good Vibes, Great Bites and a Coffee.</p>
+          <p class="footer-copy-small">Open every day · 1 PM – 11 PM</p>
+        </div>
+        <div class="footer-nav">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-info">
+          <h4>Contact</h4>
+          <address>
+            <p><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Near Airport Road, Nedumbassery, Kerala</p>
+            <p><i class="fa-regular fa-clock" aria-hidden="true"></i> 1 PM – 11 PM, Daily</p>
+            <p><i class="fa-solid fa-phone" aria-hidden="true"></i> +91 98765 43210</p>
+          </address>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 ...and a Coffee Resto Café. All Rights Reserved.</p>
+        <a href="#home" class="back-top" aria-label="Back to top">
+          <i class="fa-solid fa-chevron-up" aria-hidden="true"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/919876543210?text=Hi!%20I%20saw%20your%20website%20and%20wanted%20to%20know%20more."
+     target="_blank" rel="noopener noreferrer"
+     class="float-wa" id="float-whatsapp" aria-label="Chat on WhatsApp">
+    <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
