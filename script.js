@@ -102,6 +102,12 @@ const revealObserver = new IntersectionObserver(
 
 document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
 
+// Add image fade-in observer to all images (excluding those that might interfere, though all should be fine)
+document.querySelectorAll('img').forEach(img => {
+  img.classList.add('img-reveal');
+  revealObserver.observe(img);
+});
+
 /* ==============================
    MENU TABS
    ============================== */
