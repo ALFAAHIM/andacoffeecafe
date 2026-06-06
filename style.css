@@ -45,6 +45,7 @@
   /* Motion */
   --ease:      cubic-bezier(0.4, 0, 0.2, 1);
   --ease-out:  cubic-bezier(0, 0, 0.2, 1);
+  --ease-apple: cubic-bezier(0.16, 1, 0.3, 1);
   --duration:  0.28s;
 }
 
@@ -145,10 +146,10 @@ address { font-style: normal; }
 /* ============ REVEAL ANIMATION ============ */
 .reveal {
   opacity: 0;
-  transform: translateX(-35px);
-  transition: opacity 0.6s var(--ease-out), transform 0.6s var(--ease-out);
+  transform: translateY(40px);
+  transition: opacity 1.2s var(--ease-apple), transform 1.2s var(--ease-apple);
 }
-.reveal.is-visible { opacity: 1; transform: translateX(0); }
+.reveal.is-visible { opacity: 1; transform: translateY(0); }
 
 .img-reveal {
   opacity: 0;
