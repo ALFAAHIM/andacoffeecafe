@@ -86,8 +86,20 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 /* ==============================
-   SCROLL REVEAL
+   SCROLL REVEAL & FLOATING
    ============================== */
+// Add text fade-in observer to all text elements for the Apple-style bottom-to-top reveal
+document.querySelectorAll('h1, h2, h3, h4, p, .eyebrow, .menu-row, .hero-pill, .script-text').forEach(el => {
+  if (!el.classList.contains('reveal')) {
+    el.classList.add('reveal');
+  }
+});
+
+// Add floating effect to specific sections
+document.querySelectorAll('.review-card, .why-card, .g-item, .about-img-frame').forEach(el => {
+  el.classList.add('float-effect');
+});
+
 const revealObserver = new IntersectionObserver(
   (entries) => {
     entries.forEach(entry => {
