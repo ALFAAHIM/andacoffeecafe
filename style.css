@@ -311,7 +311,7 @@ address { font-style: normal; }
   background-size: cover;
   background-position: center 35%;
   background-repeat: no-repeat;
-  background-image: url('images/interior.jpg');
+  background-image: url('images/exterior.jpg');
   animation: heroZoom 9s var(--ease-out) forwards;
   will-change: transform;
 }
