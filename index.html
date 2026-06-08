@@ -528,27 +528,43 @@
   </section>
 
   <!-- ================================================
-       FINAL CTA SECTION
+       RESERVATION & TIMINGS
   ================================================ -->
-  <section class="cta-section" aria-label="Call to action">
-    <div class="cta-bg-wrap">
-      <img src="images/exterior.jpg" alt="and a Coffee exterior at night" class="cta-bg-img" loading="lazy" />
-    </div>
-    <div class="cta-overlay" aria-hidden="true"></div>
+  <section id="reservation" class="reservation-section section-space" aria-label="Table Reservation">
     <div class="container">
-      <div class="cta-content">
-        <span class="cta-eyebrow">Come Visit Us</span>
-        <h2 class="cta-heading">Planning a Coffee Break?</h2>
-        <p class="cta-sub">Drop in for good food, warm coffee, and a relaxed café experience.</p>
-        <div class="cta-btns">
-          <a href="tel:+919876543210" class="btn btn-gold" id="cta-call">
-            <i class="fa-solid fa-phone" aria-hidden="true"></i> Call Now
-          </a>
-          <a href="https://maps.google.com/?q=and+a+Coffee+Resto+Café+Nedumbassery+Kerala"
-             target="_blank" rel="noopener noreferrer"
-             class="btn btn-glass" id="cta-directions">
-            <i class="fa-solid fa-map-location-dot" aria-hidden="true"></i> Get Directions
-          </a>
+      <div class="reservation-grid">
+        <div class="timing-info">
+          <span class="eyebrow reveal">Opening Hours</span>
+          <h2 class="section-heading light reveal">We're Ready For You</h2>
+          <ul class="time-list reveal">
+            <li><span>Monday - Friday</span> <span>1:00 PM – 11:00 PM</span></li>
+            <li><span>Saturday - Sunday</span> <span>1:00 PM – 11:30 PM</span></li>
+          </ul>
+          <p class="timing-note reveal">Kitchen closes 45 minutes before closing time.</p>
+        </div>
+        
+        <div class="booking-card reveal">
+          <div class="booking-header">
+            <h3>Book a Table</h3>
+            <p>Reserve your spot for a cozy evening.</p>
+          </div>
+          <form class="booking-form" onsubmit="event.preventDefault(); alert('Reservation request sent! We will contact you to confirm.');">
+            <input type="text" placeholder="Your Name" required aria-label="Your Name" />
+            <input type="tel" placeholder="Phone Number" required aria-label="Phone Number" />
+            <div class="form-row">
+              <input type="date" required aria-label="Date" />
+              <input type="time" required aria-label="Time" />
+            </div>
+            <select required aria-label="Number of Guests">
+              <option value="" disabled selected>Number of Guests</option>
+              <option value="1">1 Person</option>
+              <option value="2">2 People</option>
+              <option value="3">3 People</option>
+              <option value="4">4 People</option>
+              <option value="5+">5+ People</option>
+            </select>
+            <button type="submit" class="btn btn-primary btn-full">Request Reservation</button>
+          </form>
         </div>
       </div>
     </div>

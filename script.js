@@ -96,7 +96,7 @@ document.querySelectorAll('h1, h2, h3, h4, p, .eyebrow, .menu-row, .hero-pill, .
 });
 
 // Add floating effect to specific sections
-document.querySelectorAll('.review-card, .why-card, .g-item, .about-img-frame').forEach(el => {
+document.querySelectorAll('.review-card, .why-card, .g-item, .about-img-frame, .booking-card').forEach(el => {
   el.classList.add('float-effect');
 });
 
