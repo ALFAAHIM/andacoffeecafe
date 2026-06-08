@@ -245,24 +245,24 @@ document.querySelectorAll('.menu-row').forEach(row => {
    ============================== */
 const floatWa = document.getElementById('float-whatsapp');
 if (floatWa) {
-  // Initially hidden below fold, appear after first scroll
-  floatWa.style.opacity = '0';
-  floatWa.style.transform = 'translateY(8px)';
-  floatWa.style.transition = 'opacity 0.4s ease, transform 0.4s ease, box-shadow 0.3s ease';
+  floatWa.style.transition = 'opacity 0.4s ease, transform 0.4s ease, box-shadow 0.3s ease, visibility 0.4s';
 
   const showWa = () => {
-    // Only show after scrolling past 90% of the viewport (the hero section)
-    if (window.scrollY > window.innerHeight * 0.9) {
+    // Show after scrolling past 70% of the hero section
+    if (window.scrollY > window.innerHeight * 0.7) {
       floatWa.style.opacity = '1';
       floatWa.style.transform = 'translateY(0)';
       floatWa.style.pointerEvents = 'auto';
+      floatWa.style.visibility = 'visible';
     } else {
       floatWa.style.opacity = '0';
       floatWa.style.transform = 'translateY(8px)';
       floatWa.style.pointerEvents = 'none';
+      floatWa.style.visibility = 'hidden';
     }
   };
   window.addEventListener('scroll', showWa, { passive: true });
+  showWa(); // Call once on load to set initial state
 }
 
 /* ==============================
