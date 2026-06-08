@@ -251,12 +251,15 @@ if (floatWa) {
   floatWa.style.transition = 'opacity 0.4s ease, transform 0.4s ease, box-shadow 0.3s ease';
 
   const showWa = () => {
-    if (window.scrollY > 300) {
+    // Only show after scrolling past 90% of the viewport (the hero section)
+    if (window.scrollY > window.innerHeight * 0.9) {
       floatWa.style.opacity = '1';
       floatWa.style.transform = 'translateY(0)';
+      floatWa.style.pointerEvents = 'auto';
     } else {
       floatWa.style.opacity = '0';
       floatWa.style.transform = 'translateY(8px)';
+      floatWa.style.pointerEvents = 'none';
     }
   };
   window.addEventListener('scroll', showWa, { passive: true });
